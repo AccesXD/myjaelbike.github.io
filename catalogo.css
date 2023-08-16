@@ -1,0 +1,125 @@
+*::after,
+*::before,
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+button:hover{
+    background-color: rgb(117, 23, 23);
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    max-width: 1200px;
+    color: #333;
+    
+}
+
+.logo{
+    font-size: 1.2em;
+    margin: 0;
+    color: crimson;
+    font-weight: bold;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+header{
+    background-color: whitesmoke;
+    position:fixed;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+header .contain{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+header .img03{
+    width: 70px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom:0px;
+    padding-right:10px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: flex;
+}
+
+
+.container-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 90px;
+    padding-left: 15vh;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+
+}
